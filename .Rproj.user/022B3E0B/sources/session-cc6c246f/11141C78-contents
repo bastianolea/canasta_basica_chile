@@ -1,0 +1,7 @@
+
+file = informes_pdf[46]
+  
+extracted_data <- extract_tables(file, output = "tibble")
+
+extracted_data[[3]] |> 
+  glimpse()

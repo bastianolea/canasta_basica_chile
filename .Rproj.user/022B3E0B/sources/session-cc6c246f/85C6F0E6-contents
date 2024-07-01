@@ -1,0 +1,14 @@
+if (interactive() && requireNamespace("rsthemes", quietly = TRUE)) {
+#   # Set preferred themes if not handled elsewhere..
+  rsthemes::set_theme_light("Xcode")  # light theme
+  rsthemes::set_theme_dark("base16 Default Dark {rsthemes}") # dark theme
+  # thematic::thematic_on() "ggplot dark theme
+  
+#   #rsthemes::set_theme_dark("Dracula") # dark theme
+# 
+#   # Whenever the R session restarts inside RStudio...
+#   setHook("rstudio.sessionInit", function(isNewSession) {
+#     # Automatically choose the correct theme based on time of day
+#     rsthemes::use_theme_auto(dark_start = "19:00", dark_end = "8:00")
+#   }, action = "append")
+}
